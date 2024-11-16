@@ -30,7 +30,7 @@ const Homepage = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-4">
           {/* Tool Card 1: Word Counter */}
           <Link to="/Wordcounter">
             <div className="bg-white p-6 shadow-lg rounded-lg text-center h-64 w-full flex flex-col justify-center items-center hover:scale-95 hover:bg-slate-300 transition duration-200">
