@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Lengthconverter(props) {
+export default function Lengthconverter() {
   let inputData;
   let dataType;
   let meter, centimeter, foot, inch, yard, kilometer;
@@ -114,54 +114,27 @@ export default function Lengthconverter(props) {
         </div>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span
-              id="meters"
-              className="block text-2xl font-bold text-gray-800"
+          {[
+            { id: "meters", label: "Meters" },
+            { id: "centimeters", label: "Centimeters" },
+            { id: "foots", label: "Feet" },
+            { id: "inches", label: "Inches" },
+            { id: "yards", label: "Yards" },
+            { id: "kilometers", label: "Kilometers" },
+          ].map(({ id, label }) => (
+            <div
+              key={id}
+              className="bg-gray-200 p-6 rounded-lg shadow-md text-center"
             >
-              -
-            </span>
-            <p className="text-gray-500">Meters</p>
-          </div>
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span
-              id="centimeters"
-              className="block text-2xl font-bold text-gray-800"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Centimeters</p>
-          </div>
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span id="foots" className="block text-2xl font-bold text-gray-800">
-              -
-            </span>
-            <p className="text-gray-500">Feet</p>
-          </div>
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span
-              id="inches"
-              className="block text-2xl font-bold text-gray-800"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Inches</p>
-          </div>
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span id="yards" className="block text-2xl font-bold text-gray-800">
-              -
-            </span>
-            <p className="text-gray-500">Yards</p>
-          </div>
-          <div className="bg-gray-200 p-6 rounded-lg shadow-md text-center">
-            <span
-              id="kilometers"
-              className="block text-2xl font-bold text-gray-800"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Kilometers</p>
-          </div>
+              <span
+                id={id}
+                className="block text-2xl font-bold text-gray-800 break-words"
+              >
+                -
+              </span>
+              <p className="text-gray-500">{label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
