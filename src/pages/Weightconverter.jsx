@@ -108,57 +108,28 @@ export default function Weightconverter(props) {
             Calculate
           </button>
         </div>
-        <div className="flex justify-between gap-4">
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span className="block text-4xl font-bold text-gray-800" id="grams">
-              -
-            </span>
-            <p className="text-gray-500">Grams</p>
-          </div>
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span
-              className="block text-4xl font-bold text-gray-800"
-              id="kilograms"
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {[
+            { id: "grams", label: "Grams" },
+            { id: "kilograms", label: "Kilograms" },
+            { id: "pounds", label: "Pounds" },
+            { id: "ounces", label: "Ounces" },
+            { id: "miligrams", label: "Miligrams" },
+            { id: "tons", label: "Tons" },
+          ].map(({ id, label }) => (
+            <div
+              key={id}
+              className="bg-gray-200 p-6 rounded-lg shadow-md text-center"
             >
-              -
-            </span>
-            <p className="text-gray-500">Kilograms</p>
-          </div>
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span
-              className="block text-4xl font-bold text-gray-800"
-              id="pounds"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Pounds</p>
-          </div>
-        </div>
-        <div className="flex justify-between gap-4 mt-4">
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span
-              className="block text-4xl font-bold text-gray-800"
-              id="ounces"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Ounces</p>
-          </div>
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span
-              className="block text-4xl font-bold text-gray-800"
-              id="miligrams"
-            >
-              -
-            </span>
-            <p className="text-gray-500">Milligrams</p>
-          </div>
-          <div className="w-1/3 p-6 text-center bg-gray-200 rounded-lg shadow-md">
-            <span className="block text-4xl font-bold text-gray-800" id="tons">
-              -
-            </span>
-            <p className="text-gray-500">Tons</p>
-          </div>
+              <span
+                id={id}
+                className="block text-2xl font-bold text-gray-800 break-words"
+              >
+                -
+              </span>
+              <p className="text-gray-500">{label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
