@@ -48,7 +48,7 @@ const Login = (props) => {
   };
 
   return (
-    <div className="bg-gray-900 w-full flex items-center justify-center min-h-screen py-12">
+    <div className="bg-gray-100 w-full flex items-center justify-center min-h-screen py-12">
       <div className="bg-gray-800 max-w-md w-full p-6 rounded-lg border border-white shadow-xl text-white">
         <form onSubmit={handleSubmit}>
           <h1 className="text-green-500 text-4xl text-center font-bold mb-6">
