@@ -48,10 +48,10 @@ const Login = (props) => {
   };
 
   return (
-    <div className="bg-gray-900 w-full flex items-center justify-center min-h-screen py-12">
-      <div className="bg-gray-800 max-w-md w-full p-6 rounded-lg border border-white shadow-xl text-white">
+    <div className="bg-gray-100 w-full flex items-center justify-center min-h-screen py-12">
+      <div className="bg-blue-800 max-w-md w-full p-6 rounded-lg border border-white shadow-xl text-white">
         <form onSubmit={handleSubmit}>
-          <h1 className="text-green-500 text-4xl text-center font-bold mb-6">
+          <h1 className="text-white text-4xl text-center font-bold mb-6">
             Login
           </h1>
           <hr className="border-t border-white mb-6" />
@@ -62,7 +62,7 @@ const Login = (props) => {
             </label>
             <input
               type="email"
-              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-4 py-2 bg-gray-200 text-white placeholder:text-gray-500 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               id="email"
               name="email"
               value={credentials.email}
@@ -83,7 +83,7 @@ const Login = (props) => {
             </label>
             <input
               type="password"
-              className="w-full px-4 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-4 py-2 bg-gray-200 placeholder:text-gray-500 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               id="password"
               name="password"
               value={credentials.password}
