@@ -138,7 +138,7 @@ const Signup = (props) => {
 
           <hr className="border-t-2 border-white mb-6" />
 
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-between items-center">
             {isLoading && <LoadingSpinner />}
             {errorMessage && <div className="text-red-500">{errorMessage}</div>}
             <button
