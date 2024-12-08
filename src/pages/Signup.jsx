@@ -59,9 +59,9 @@ const Signup = (props) => {
   };
 
   return (
-    <div className="bg-gray-900 w-full min-h-screen py-8 flex justify-center items-center">
-      <div className="bg-gray-800 w-full max-w-lg p-6 border border-white shadow-lg rounded-lg">
-        <h1 className="text-green-500 text-4xl text-center font-bold mb-6">
+    <div className="bg-gray-100 w-full min-h-screen py-8 flex justify-center items-center">
+      <div className="bg-blue-800 w-full max-w-lg p-6 border border-white shadow-lg rounded-lg">
+        <h1 className="text-white text-4xl text-center font-bold mb-6">
           SignUp
         </h1>
         <hr className="border-t-2 border-white mb-6" />
@@ -73,7 +73,7 @@ const Signup = (props) => {
             </label>
             <input
               type="text"
-              className="w-full p-3 mt-2 bg-gray-700 text-white border border-gray-600 rounded-lg"
+              className="w-full p-3 mt-2 bg-gray-200 placeholder:text-gray-500 text-white border border-gray-600 rounded-lg"
               id="name"
               name="name"
               value={credentials.name}
@@ -88,7 +88,7 @@ const Signup = (props) => {
             </label>
             <input
               type="email"
-              className="w-full p-3 mt-2 bg-gray-700 text-white border border-gray-600 rounded-lg"
+              className="w-full p-3 mt-2 bg-gray-200 placeholder:text-gray-500 text-white border border-gray-600 rounded-lg"
               id="email"
               name="email"
               value={credentials.email}
@@ -109,7 +109,7 @@ const Signup = (props) => {
             </label>
             <input
               type="password"
-              className="w-full p-3 mt-2 bg-gray-700 text-white border border-gray-600 rounded-lg"
+              className="w-full p-3 mt-2 bg-gray-200 placeholder:text-gray-500 text-white border border-gray-600 rounded-lg"
               id="password"
               name="password"
               value={credentials.password}
@@ -127,7 +127,7 @@ const Signup = (props) => {
             </label>
             <input
               type="password"
-              className="w-full p-3 mt-2 bg-gray-700 text-white border border-gray-600 rounded-lg"
+              className="w-full p-3 mt-2 bg-gray-200 placeholder:text-gray-500 text-white border border-gray-600 rounded-lg"
               id="confirmpassword"
               name="confirmpassword"
               value={credentials.confirmpassword}
