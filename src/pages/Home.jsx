@@ -78,6 +78,17 @@ const Homepage = () => {
               <div className="text-4xl mb-4 text-blue-500">⚖️</div>
               <h3 className="text-xl font-semibold mb-3">Weight Converter</h3>
               <p className="text-gray-600 mb-4">
+                Convert between Kilogram, Pound, and Ounces.
+              </p>
+            </div>
+          </Link>
+
+          {/* Tool Card 4: Temperature Converter */}
+          <Link to="/Temperatureconverter">
+            <div className="bg-white p-6 shadow-lg rounded-lg text-center h-64 w-full flex flex-col justify-center items-center hover:scale-95 hover:bg-slate-300 transition duration-200">
+              <div className="text-4xl mb-4 text-blue-500">🌡️</div>
+              <h3 className="text-xl font-semibold mb-3">Temperature Converter</h3>
+              <p className="text-gray-600 mb-4">
                 Convert between Celsius, Fahrenheit, and Kelvin.
               </p>
             </div>
